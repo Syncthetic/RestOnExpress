@@ -21,10 +21,10 @@ router.delete("/", (request, response) => {
 
 // In a real application, this would be done programmatically
 router.put("/", (request, response) => {
-    response.status(405).send({error: "PUT method not allowed on /api/shipments"})
+    response.status(405).send({error: "PUT method not allowed"})
 })
 
 router.patch("/", (request, response) => {
-    response.status(405).send({error: "PATCH method not allowed on /api/shipments"})
+    response.status(405).send({error: "PATCH method not allowed"})
 })
 module.exports = router; 
