@@ -12,7 +12,7 @@ Configuration settings are pulled from the environment.
 |-                     | -                                             | -             |
 | `ROE_DB_CONNECTION`  | `<mongodb+srv://<username>:<password>@<host>` |               |
 | `ROE_DB_NAME`        | `<name of the datbase>`                       |               |
-| `ROE_COLLECTIONS`    | `<collection1:collection2:...`                |               |
+| `ROE_COLLECTIONS`    | `<collection1:collection2:...>`               |               |
 | `ROE_PORT`           | `<application listening port>`                | `3000`        |
 | `ROE_API_BASE`       | `<the base reference to the API>`             | `/api`        |
 > Note that the first collection in the `ROE_COLLECTIONS` environment variable will be instantiated first. To use other collections in your resources, call the `coll(name: string): collection` method
