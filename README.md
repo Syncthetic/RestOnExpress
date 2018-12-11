@@ -28,7 +28,7 @@ You can instantiate multiple collections as desired for your API.
 If desired, you can change the base reference to your API in `app.js`, default is `/api`
 `app.use('/api', require('./routes'));`
 
-Set your resources in `/routes/index.js` a default resource `shipments` is available to explore. Since resources have verbiage attached, why have both a singular and plural route set.
+Set your resources in `/routes/index.js` a default resource `shipments` is available to explore. Since resources have verbiage attached, we have both a singular and plural route set.
 > this could probably be done programatically via some lazy-loading
 ```
 // inside /routes/index.js
