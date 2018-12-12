@@ -36,7 +36,7 @@ ROE_COLLECTIONS="products" \
 node app.js
 ```
 
-Sending API requests: `http://localhost:3000/<ROE_API_BASE>/<desired route path>`
+Sending API requests: `http://localhost:<ROE_PORT>/<ROE_API_BASE>/<desired route path>`
 > i.e,
 >`GET http://localhost:3000/api/users` or 
 >`PUT http://localhost:3000/api/user`
