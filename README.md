@@ -1,11 +1,6 @@
 # RestOnExpress
 > Easily build and manage a RESTful API using Express and MongoDB.
 
-To get started, clone the repository
-`git clone https://github.com/Syncthetic/RestOnExpress`
-
-Install dependant packages `npm install`
-
 Configuration settings are pulled from the environment.
 
 | Environment Variable | Value                                         | Default Value |
@@ -15,7 +10,28 @@ Configuration settings are pulled from the environment.
 | `ROE_COLLECTIONS`    | `<collection1:collection2:...>`               |               |
 | `ROE_PORT`           | `<application listening port>`                | `3000`        |
 | `ROE_API_BASE`       | `<the base reference to the API>`             | `/api`        |
+| `STANDALONE`         | `boolean true if not an npm module`           | `false` |
 > Note that the first collection in the `ROE_COLLECTIONS` environment variable will be instantiated first. To use other collections in your resources, call the `coll(name: string): collection` method
+
+# Getting started as an NPM Module
+Install the package
+`npm i @syncthetic/rest-on-express --save`
+import the package, set the route directory, and start the service
+```javascript
+const restOnExpress = require('@syncthetic/rest-on-express/app')
+restOnExpress.set_route_directory(__dirname + '/routes')
+restOnExpress.start_api()
+```
+
+The route directory should point to the routes to be used via the Express app.
+
+# Getting started as repository
+To get started, clone the repository
+`git clone https://github.com/Syncthetic/RestOnExpress`
+
+Install dependant packages `npm install`
+
+Set the environment variable `ROE_STANDALONE` to any value.
 
 The API resources should be configured inside the `routes/index.js` file.
 Configure resources to point to the file which handles it's logic.
