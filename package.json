@@ -1,6 +1,6 @@
 {
   "name": "@syncthetic/rest-on-express",
-  "version": "0.0.2",
+  "version": "1.0.3",
   "description": "Easily build and manage a RESTful API using Express and MongoDB",
   "bugs": "https://github.com/Syncthetic/RestOnExpress/issues",
 	"author": {
